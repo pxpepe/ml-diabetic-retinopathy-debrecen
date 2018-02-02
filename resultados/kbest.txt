@@ -1,0 +1,480 @@
+---------------------------
+**** K Best ****
+---------------------------
+-------------------------------
+Classifier: DecisionTreeClassifier
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+Best Params: 
+{'criterion': 'gini', 'max_features': 'auto', 'min_impurity_decrease': 0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.5, 'presort': True, 'random_state': 0, 'splitter': 'best'}
+-------------------------------
+Metrics: 
+Accuracy: 0.530842036554
+Recall: 1.0
+Precion: 0.530842036554
+Specificity: 0.0
+F-Measure: 0.693529288849
+ROC: 0.5
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+Best Params: 
+{'criterion': 'gini', 'max_features': 'auto', 'min_impurity_decrease': 0, 'min_samples_leaf': 4, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'presort': True, 'random_state': 0, 'splitter': 'best'}
+-------------------------------
+Metrics: 
+Accuracy: 0.69329308094
+Recall: 0.66442094079
+Precion: 0.73257779407
+Specificity: 0.725925925926
+F-Measure: 0.696640172102
+ROC: 0.738771303541
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+Best Params: 
+{'criterion': 'gini', 'max_features': 'auto', 'min_impurity_decrease': 0, 'min_samples_leaf': 4, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'presort': True, 'random_state': 0, 'splitter': 'best'}
+-------------------------------
+Metrics: 
+Accuracy: 0.69329308094
+Recall: 0.66442094079
+Precion: 0.73257779407
+Specificity: 0.725925925926
+F-Measure: 0.696640172102
+ROC: 0.738771303541
+
+
+
+-------------------------------
+Classifier: KNN
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+Best Params: 
+{'algorithm': 'auto', 'leaf_size': 20, 'metric': 'euclidean', 'n_jobs': -1, 'n_neighbors': 4, 'weights': 'distance'}
+-------------------------------
+Metrics: 
+Accuracy: 0.671587159124
+Recall: 0.646487330564
+Precion: 0.709245924749
+Specificity: 0.7
+F-Measure: 0.67629277146
+ROC: 0.720610795404
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+Best Params: 
+{'algorithm': 'auto', 'leaf_size': 25, 'metric': 'chebyshev', 'n_jobs': -1, 'n_neighbors': 5, 'weights': 'distance'}
+-------------------------------
+Metrics: 
+Accuracy: 0.680290379315
+Recall: 0.631789497408
+Precion: 0.729535480041
+Specificity: 0.735185185185
+F-Measure: 0.677096424462
+ROC: 0.729962106171
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+Best Params: 
+{'algorithm': 'auto', 'leaf_size': 25, 'metric': 'chebyshev', 'n_jobs': -1, 'n_neighbors': 5, 'weights': 'distance'}
+-------------------------------
+Metrics: 
+Accuracy: 0.680290379315
+Recall: 0.631789497408
+Precion: 0.729535480041
+Specificity: 0.735185185185
+F-Measure: 0.677096424462
+ROC: 0.729962106171
+
+
+
+-------------------------------
+Classifier: AdaBoost
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+Best Params: 
+{'algorithm': 'SAMME.R', 'learning_rate': 4, 'n_estimators': 25, 'random_state': 0}
+-------------------------------
+Metrics: 
+Accuracy: 0.530842036554
+Recall: 1.0
+Precion: 0.530842036554
+Specificity: 0.0
+F-Measure: 0.693529288849
+ROC: 0.487295349174
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+Best Params: 
+{'algorithm': 'SAMME.R', 'learning_rate': 1, 'n_estimators': 45, 'random_state': 0}
+-------------------------------
+Metrics: 
+Accuracy: 0.676797758921
+Recall: 0.648177661869
+Precion: 0.717365690894
+Specificity: 0.709259259259
+F-Measure: 0.680264382513
+ROC: 0.729127941087
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+Best Params: 
+{'algorithm': 'SAMME.R', 'learning_rate': 3, 'n_estimators': 25, 'random_state': 0}
+-------------------------------
+Metrics: 
+Accuracy: 0.531710092109
+Recall: 0.998366013072
+Precion: 0.53136150287
+Specificity: 0.0037037037037
+F-Measure: 0.693575803181
+ROC: 0.501578045011
+
+
+
+
+-------------------------------
+Classifier: Multilayer Perceptron
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+Best Params: 
+{'activation': 'relu', 'alpha': 0.001, 'epsilon': 1e-07, 'hidden_layer_sizes': (20, 4), 'learning_rate': 'constant', 'max_iter': 500, 'random_state': 0, 'solver': 'adam'}
+-------------------------------
+Metrics: 
+Accuracy: 0.713308220917
+Recall: 0.646511478154
+Precion: 0.775914459351
+Specificity: 0.788888888889
+F-Measure: 0.705315537106
+ROC: 0.790678605414
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+Best Params: 
+{'activation': 'relu', 'alpha': 0.001, 'epsilon': 1e-07, 'hidden_layer_sizes': (20, 4), 'learning_rate': 'constant', 'max_iter': 500, 'random_state': 0, 'solver': 'adam'}
+-------------------------------
+Metrics: 
+Accuracy: 0.713308220917
+Recall: 0.646511478154
+Precion: 0.775914459351
+Specificity: 0.788888888889
+F-Measure: 0.705315537106
+ROC: 0.790678605414
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+Best Params: 
+{'activation': 'relu', 'alpha': 0.001, 'epsilon': 1e-07, 'hidden_layer_sizes': (20, 4), 'learning_rate': 'constant', 'max_iter': 500, 'random_state': 0, 'solver': 'adam'}
+-------------------------------
+Metrics: 
+Accuracy: 0.713308220917
+Recall: 0.646511478154
+Precion: 0.775914459351
+Specificity: 0.788888888889
+F-Measure: 0.705315537106
+ROC: 0.790678605414
+
+
+-------------------------------
+Classifier: Naive Bayes
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+Metrics: 
+Accuracy: 0.573422088048
+Recall: 0.484416755208
+Precion: 0.627406824282
+Specificity: 0.674074074074
+F-Measure: 0.546273324738
+ROC: 0.632892259714
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+Metrics: 
+Accuracy: 0.573422088048
+Recall: 0.484416755208
+Precion: 0.627406824282
+Specificity: 0.674074074074
+F-Measure: 0.546273324738
+ROC: 0.632892259714
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+Metrics: 
+Accuracy: 0.573422088048
+Recall: 0.484416755208
+Precion: 0.627406824282
+Specificity: 0.674074074074
+F-Measure: 0.546273324738
+ROC: 0.632892259714
+
+
+-------------------------------
+Classifier: Random Forest
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+Best Params: 
+{'criterion': 'gini', 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 1000, 'n_jobs': -1, 'random_state': 0}
+-------------------------------
+Metrics: 
+Accuracy: 0.683769400928
+Recall: 0.680873498825
+Precion: 0.71113772663
+Specificity: 0.687037037037
+F-Measure: 0.695645348485
+ROC: 0.761913258279
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+Best Params: 
+{'criterion': 'entropy', 'max_features': 'auto', 'min_samples_leaf': 4, 'n_estimators': 10, 'n_jobs': -1, 'random_state': 0}
+-------------------------------
+Metrics: 
+Accuracy: 0.693315745576
+Recall: 0.666143468882
+Precion: 0.732368983312
+Specificity: 0.724074074074
+F-Measure: 0.697383357748
+ROC: 0.759543798362
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+Best Params: 
+{'criterion': 'gini', 'max_features': 'auto', 'min_samples_leaf': 5, 'n_estimators': 10, 'n_jobs': -1, 'random_state': 0}
+-------------------------------
+Metrics: 
+Accuracy: 0.692449956484
+Recall: 0.674305354326
+Precion: 0.727697988802
+Specificity: 0.712962962963
+F-Measure: 0.699421811869
+ROC: 0.762717104722
+
+
+-------------------------------
+Classifier: SVM
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+Best Params: 
+{'C': 10, 'kernel': 'poly', 'probability': True}
+-------------------------------
+Metrics: 
+Accuracy: 0.644672903974
+Recall: 0.793827875978
+Precion: 0.631184635692
+Specificity: 0.475925925926
+F-Measure: 0.702980379821
+ROC: 0.749200826563
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+Best Params: 
+{'C': 1000, 'kernel': 'linear', 'probability': True}
+-------------------------------
+Metrics: 
+Accuracy: 0.737634174645
+Recall: 0.638325445121
+Precion: 0.827925901577
+Specificity: 0.85
+F-Measure: 0.720861469204
+ROC: 0.816502530131
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+Best Params: 
+{'C': 100, 'gamma': 0.2, 'kernel': 'rbf', 'probability': True}
+-------------------------------
+Metrics: 
+Accuracy: 0.730694263127
+Recall: 0.661273704884
+Precion: 0.79669545233
+Specificity: 0.809259259259
+F-Measure: 0.722624546303
+ROC: 0.810042244867
+
+
+-------------------------------
+Classifier: Gaussian Process Classifier
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+Best Params: 
+{'kernel': 1**2 * RBF(length_scale=1)}
+-------------------------------
+Metrics: 
+Accuracy: 0.74198578474
+Recall: 0.67925561029
+Precion: 0.804064395071
+Specificity: 0.812962962963
+F-Measure: 0.736392194588
+ROC: 0.822066716214
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+Best Params: 
+{'kernel': 1**2 * RBF(length_scale=[1, 1, 1, 1, 1])}
+-------------------------------
+Metrics: 
+Accuracy: 0.744589951407
+Recall: 0.679247561093
+Precion: 0.808931202539
+Specificity: 0.818518518519
+F-Measure: 0.738429021632
+ROC: 0.822656454025
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+Best Params: 
+{'kernel': 1**2 * RBF(length_scale=[1, 1, 1, 1, 1])}
+-------------------------------
+Metrics: 
+Accuracy: 0.744589951407
+Recall: 0.679247561093
+Precion: 0.808931202539
+Specificity: 0.818518518519
+F-Measure: 0.738429021632
+ROC: 0.822656454025
+-------------------------------
+
+
+
+-------------------------------
+Energy Function: Sensitivity
+-------------------------------
+-------------------------------
+Classifier: Voting All
+-------------------------------
+Metrics: 
+Accuracy: 0.708090821729
+Recall: 0.721811713191
+Precion: 0.726842529199
+Specificity: 0.692592592593
+F-Measure: 0.724010006657
+ROC: 0.788225344416
+-------------------------------
+-------------------------------
+Classifier: Voting Backward Search
+-------------------------------
+Classifiers
+-------------------------------
+['decision_tree_recall', 'adaboost_recall', 'multilayer_perceptron_recall', 'random_forest_recall', 'svm_recall', 'gaussian_process_recall']
+-------------------------------
+Metrics: 
+Accuracy: 0.710697254859
+Recall: 0.769293924466
+Precion: 0.711055189323
+Specificity: 0.644444444444
+F-Measure: 0.737785726533
+ROC: 0.810035447768
+-------------------------------
+-------------------------------
+Classifier: Voting Forward Search
+-------------------------------
+Classifiers
+-------------------------------
+['decision_tree_recall']
+-------------------------------
+Metrics: 
+Accuracy: 0.530842036554
+Recall: 1.0
+Precion: 0.530842036554
+Specificity: 0.0
+F-Measure: 0.693529288849
+ROC: 0.5
+-------------------------------
+
+
+-------------------------------
+Energy Function: Accuracy
+-------------------------------
+-------------------------------
+Classifier: Voting All
+-------------------------------
+Metrics: 
+Accuracy: 0.722865897882
+Recall: 0.653023278277
+Precion: 0.789505347594
+Specificity: 0.801851851852
+F-Measure: 0.714560465334
+ROC: 0.799036309926
+-------------------------------
+-------------------------------
+Classifier: Voting Backward Search
+-------------------------------
+Classifiers
+-------------------------------
+['gaussian_process_accuracy']
+-------------------------------
+Metrics: 
+Accuracy: 0.744589951407
+Recall: 0.679247561093
+Precion: 0.808931202539
+Specificity: 0.818518518519
+F-Measure: 0.738429021632
+ROC: 0.822656454025
+-------------------------------
+-------------------------------
+Classifier: Voting Forward Search
+-------------------------------
+Classifiers
+-------------------------------
+['gaussian_process_accuracy']
+-------------------------------
+Metrics: 
+Accuracy: 0.744589951407
+Recall: 0.679247561093
+Precion: 0.808931202539
+Specificity: 0.818518518519
+F-Measure: 0.738429021632
+ROC: 0.822656454025
+-------------------------------
+
+
+-------------------------------
+Energy Function: F-Measure
+-------------------------------
+-------------------------------
+Classifier: Voting All
+-------------------------------
+Metrics: 
+Accuracy: 0.720254931825
+Recall: 0.687401397341
+Precion: 0.762988092647
+Specificity: 0.757407407407
+F-Measure: 0.722836869661
+ROC: 0.798223430496
+-------------------------------
+-------------------------------
+Classifier: Voting Backward Search
+-------------------------------
+Classifiers
+-------------------------------
+['gaussian_process_f1']
+-------------------------------
+Metrics: 
+Accuracy: 0.744589951407
+Recall: 0.679247561093
+Precion: 0.808931202539
+Specificity: 0.818518518519
+F-Measure: 0.738429021632
+ROC: 0.822656454025
+-------------------------------
+-------------------------------
+Classifier: Voting Forward Search
+-------------------------------
+Classifiers
+-------------------------------
+['gaussian_process_f1']
+-------------------------------
+Metrics: 
+Accuracy: 0.744589951407
+Recall: 0.679247561093
+Precion: 0.808931202539
+Specificity: 0.818518518519
+F-Measure: 0.738429021632
+ROC: 0.822656454025
+-------------------------------
