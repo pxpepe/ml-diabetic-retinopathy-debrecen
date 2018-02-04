@@ -329,20 +329,20 @@ def binary_3d_plot(X, y_train, y_pred):
     X_nhit = X[y_hit==False]
     
     # Pintamos o acerto a verde, e a classe 1 com o triangulo
-    ax.scatter(X_hit[y_pred_hit==1,0], X_hit[y_pred_hit==1,1], X_hit[y_pred_hit==1,2], c='g', marker='^')
+    ax.scatter(X_hit[y_pred_hit==1,0], X_hit[y_pred_hit==1,1], X_hit[y_pred_hit==1,2], c='g', marker='^', label='TP')
     
     # Os que foram mal classificados pintamos a vermelho
-    ax.scatter(X_nhit[y_pred_nhit==1,0], X_nhit[y_pred_nhit==1,1], X_nhit[y_pred_nhit==1,2], c='r', marker='^')
+    ax.scatter(X_nhit[y_pred_nhit==1,0], X_nhit[y_pred_nhit==1,1], X_nhit[y_pred_nhit==1,2], c='r', marker='^', label='FP')
     
     # Pintamos o acerto a verde, e a classe 0 com o circulo
-    ax.scatter(X_hit[y_pred_hit==0,0], X_hit[y_pred_hit==0,1], X_hit[y_pred_hit==0,2], c='b', marker='o')
+    ax.scatter(X_hit[y_pred_hit==0,0], X_hit[y_pred_hit==0,1], X_hit[y_pred_hit==0,2], c='b', marker='o', label='TN')
     
     # Os que foram mal classificados pintamos a vermelho
-    ax.scatter(X_nhit[y_pred_nhit==0,0], X_nhit[y_pred_nhit==0,1], X_nhit[y_pred_nhit==0,2], c='r', marker='^')
+    ax.scatter(X_nhit[y_pred_nhit==0,0], X_nhit[y_pred_nhit==0,1], X_nhit[y_pred_nhit==0,2], c='r', marker='o', label='FN')
     
-    ax.set_xlabel('X Label')
-    ax.set_ylabel('Y Label')
-    ax.set_zlabel('Z Label')
+    ax.set_xlabel('MAs encontrados, alfa = 0.5')
+    ax.set_ylabel('MAs encontrados, alfa = 0.6')
+    ax.set_zlabel('MAs encontrados, alfa = 0.7')
     
     plt.show()
     
@@ -434,3 +434,29 @@ def print_binary_roc_curve(y_test, y_probas,class_proba=1):
     plt.title('Receiver operating characteristic')
     plt.legend(loc="lower right")
     plt.show()
+    
+def print_classifier_2d_analysis(classifier, X_set, y_set, x_label = 'MAs encontrados, alfa = 0.5', y_label= 'MAs encontrados, alfa = 0.6'):
+    from matplotlib.colors import ListedColormap
+    import matplotlib.pyplot as plt
+    import numpy as np
+    X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.1),
+                 np.arange(start = X_set[:, 1].min() - 1, stop = X_set[:, 1].max() + 1, step = 0.1))
+    plt.contourf(X1, X2, classifier.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape(X1.shape),
+         alpha = 0.75, cmap = ListedColormap(('red', 'green')))
+    plt.xlim(X1.min(), X1.max())
+    plt.ylim(X2.min(), X2.max())
+    for i, j in enumerate(np.unique(y_set)):
+        plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
+            c = ListedColormap(('red', 'green'))(i), label = j)
+    plt.title('Análise classificador GPC - 2D')
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
+    plt.legend()
+    plt.show()
+    
+def print_proba_histogram(y_probas,class_proba=1):
+    import matplotlib.pyplot as plt
+    plt.hist(y_probas[:, class_proba], bins= 10)
+    plt.title('Histograma das probabilidades previstas')
+    plt.xlabel('Probabilidade prevista para a RD')
+    plt.ylabel('Frequência')
