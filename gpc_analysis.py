@@ -72,8 +72,8 @@ if __name__ == "__main__":
         x_ma = X_sc[:,2:8]
         x_nex = X_sc[:,8:16]
     
-        X_ma_pca = cg.get_lda_components(x_ma,y, 1)
-        X_nex_pca = cg.get_lda_components(x_nex,y, 1)
+        X_ma_pca = cg.get_pca_components(x_ma,y, 1)
+        X_nex_pca = cg.get_pca_components(x_nex,y, 1)
         
         X_ma_nex = np.zeros((x_ma.shape[0],2))
         
