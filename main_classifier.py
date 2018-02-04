@@ -70,7 +70,7 @@ if __name__ == "__main__":
         print('---------------------------')
         
         # Calculamos o kbest antes de fazermos a nova feature scaling dado que a função chi2 não admite valore negativos
-        X_kbest, scores2 = cg.get_chi2_kbest_components(X, y, 5)
+        X_kbest, scores = cg.get_chi2_kbest_components(X, y, 5)
         X_sc = cg.feature_scaling(X_kbest)
         
         cg.full_model_evaluation(energy_functions, X_sc, y, 'kbest_classifiers', N_FOLDS, open_file=True, display_metrics=True)
